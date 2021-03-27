@@ -15,7 +15,7 @@ def send():
     sense = SenseHat()
     user = request.form['message']
     name = request.form['from']
-    sense.show_message(user + "From" + name)
+    sense.show_message(user + " From " + name)
     return ('Message Received')
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
